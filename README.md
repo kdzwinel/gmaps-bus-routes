@@ -8,6 +8,10 @@ Installation
 ---
 Esta extensão ainda não está publicada na Web Store, então para instalar é precisa clonar o repositório, ir em extensões no seu Chrome e carregá-la manualmente.
 
+Limitations
+---
+Atualmente a extenão só funciona para linhas do [Grande Recife](http://www.granderecife.pe.gov.br/).
+
 License
 ---
 The MIT License (MIT)
