@@ -1,5 +1,7 @@
 gmaps-bus-routes
 ---
+![Google Maps with gmaps-bus-routes](https://github.com/patrickrbc/gmaps-bus-routes/raw/master/img/gmaps-bus-routes.png)
+
 Uma extensão do Google Chrome que permite visualizar diretamente no Google Maps o nome das linhas de ônibus ao invés dos códigos.
 
 Installation
