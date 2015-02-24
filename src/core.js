@@ -3,6 +3,9 @@
   var selector = 'span.renderable-component-text-box-content';
     selector += ', span.renderable-component-text';
 
+  if (window.location.href === 'https://www.google.com/maps')
+    window.location.href = 'https://www.google.com.br/maps';
+
   $(document).arrive(selector, function () {
     var code = $(this);
     code.each(getRoute);
