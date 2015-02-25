@@ -1,22 +1,25 @@
-(function() {
+(function () {
 
-  var selector = 'span.renderable-component-text-box-content';
-    selector += ', span.renderable-component-text';
-
-  if (window.location.href === 'https://www.google.com/maps')
+  if (window.location.href === 'https://www.google.com/maps') {
     window.location.href = 'https://www.google.com.br/maps';
+    return;
+  }
+
+  var selector = 'span.renderable-component-text-box-content' +
+    ', span.renderable-component-text';
 
   $(document).arrive(selector, function () {
-    var code = $(this);
-    code.each(getRoute);
+    $(this).each(getRoute);
   });
 
-  function getRoute(index) {
+  function getRoute() {
+    var codigo = $(this).text();
+
     for (var i = 0, len = linhasGrandeRecife.length; i < len; i++) {
-      if (linhasGrandeRecife[i].codigo !== $(this).text())
-        continue;
-      $(this).text(linhasGrandeRecife[i].linha);
-        break;
+      if (linhasGrandeRecife[i].codigo === codigo) {
+        $(this).text(linhasGrandeRecife[i].linha);
+        return;
+      }
     }
   }
 
